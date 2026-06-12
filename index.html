@@ -566,9 +566,9 @@
       justify-content: center;
       text-align: center;
       max-width: 800px;
-      padding: 0 24px;
-      margin: 0 auto; /* Center horizontally */
-      margin-top: 80px; /* spacing below navbar */
+      width: 100%;
+      padding: 100px 24px 24px; /* top padding clears fixed navbar */
+      margin: 0 auto;
     }
 
     .hero-line-decor {
@@ -594,11 +594,10 @@
     .hero-heading {
       font-family: var(--font-serif);
       font-weight: 600;
-      /* Responsive sizes: desktop 72px, tablet 56px, mobile 42px */
-  
-      font-size: clamp(30px, 8vw, 50px);
-      line-height: 1.1;
-      margin-bottom: 24px;
+      /* Reduced size: ~30% smaller than original 72px max */
+      font-size: clamp(28px, 6vw, 50px);
+      line-height: 1.15;
+      margin-bottom: 20px;
       color: var(--white);
       text-shadow: 0 2px 6px rgba(0,0,0,0.6);
       position: relative;
@@ -752,11 +751,11 @@
 
     .hero-description {
       font-family: var(--font-sans);
-      font-size: clamp(14px, 3vw, 17px);
+      font-size: clamp(13px, 2.5vw, 16px);
       color: rgba(255, 255, 255, 0.85);
-      max-width: 700px;
-      margin: 0 auto 36px;
-      line-height: 1.6;
+      max-width: 650px;
+      margin: 0 auto 28px;
+      line-height: 1.7;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeUp 0.8s var(--ease-reveal) 1s forwards;
